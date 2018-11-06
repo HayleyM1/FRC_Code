@@ -98,7 +98,7 @@ public class RobotIO{
 		int	getCenter() Return the gyro center value set during calibration to use as a future preset.
 		double	getAngle() Return the actual angle in degrees that the robot is currently facing.
 		void	initGyro() Initialize the gyro.
-		void	reset() Reset the gyro.
+		void	reset() Reset the gyro. 
 	  ****************************************************************************************************************/
 	  try {
 		  robotLifterGyro = new AnalogGyro(RobotMap.Analog_PinOut.ROBOT_LIFTER_GYRO);
