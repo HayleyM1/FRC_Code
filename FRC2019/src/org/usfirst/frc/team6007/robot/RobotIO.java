@@ -36,7 +36,7 @@ public class RobotIO{
 		lowerHatchSwitch = new DigitalInput(RobotMap.LOWER_HATCH_SWITCH);
 		homeCargoSwitch = new DigitalInput(RobotMap.HOME_CARGO_SWITCH);
 		lowerCargoSwitch = new DigitalInput(RobotMap.LOWER_CARGO_SWITCH);
-		//homeHatchSwitchAtFl= DigitakInput(RobotMap.HOME_HATCH_SWITCH_AT_FLOOR);
+		//homeHatchSwitchAtFl= DigitalInput(RobotMap.HOME_HATCH_SWITCH_AT_FLOOR);
 		/************************************************************************************************************
 		*these are the functions to get data from the navX board*
 		AHRS ahrs = new AHRS(SPI.Port.kMXP); 
@@ -128,33 +128,33 @@ public class RobotIO{
 		this.ahrs = ahrs;
 	}
 	
-	public static bool hatchSwitchAtFloor() {
+	public static boolean hatchSwitchAtFloor() {
 		return !hatchSwitchAtFloor.get();
 	}
 	
-	public static bool hatchSwitchAtHome() {
+	public static boolean hatchSwitchAtHome() {
 		return !hatchSwitchAtHome.get();
 	
 	}
 	
-	public static bool hatchSwitchAtLower() {
+	public static boolean hatchSwitchAtLower() {
 		return !hatchSwitchAtLower.get();
 	
 	
 	}
 	
-	/*public static bool cargoSwitchDelivery() {
+	/*public static boolean cargoSwitchDelivery() {
 	return !cargoSwitchDelivery.get();	
 	
 	
 	}*/
 	
-	public static bool cargoSwitchAtHome() {
+	public static boolean cargoSwitchAtHome() {
 		return !cargoSwitchAtHome.get();
 	}
 	
 	
-	public static bool cargoSwitchIntake() {
+	public static boolean cargoSwitchIntake() {
 		return !cargoSwitchIntake.get()
 	}
 
